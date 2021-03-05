@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://my-team-page-nu-lac.vercel.app/">
+    <a href="https://interior-consultant-six.vercel.app/">
       Demo
     </a>
   </h3>
@@ -25,7 +25,7 @@
 
 ## Overview
 
-![screenshot](https://github.com/CodeurApprenti/my-team-page/blob/master/img/overview.png)
+![screenshot](https://github.com/CodeurApprenti/Interior-Consultant/blob/master/img/overview.png)
 
 
 ### Built With

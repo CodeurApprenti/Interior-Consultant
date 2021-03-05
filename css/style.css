@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans serif;
+    background-color: #181719;
+    color:white;
+}
+
+
+.menu__icon {
+    display: none;
+  }
+
+  /* Header */
+  .header {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+  }
+
+  .header__logo h2 {
+    font-size: 15px;
+    border: 1px solid white;
+    padding: 5px 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .header__nav__list {
+    display: flex;
+    list-style: none;
+  }
+ 
+  .header__link {
+    padding: 10px 40px;
+  }
+  .header__link > a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .header__link > a:hover {
+    border-bottom: 2px solid white;
+    transition: all 1s;
+  }
+
+  /* Main */
+  .main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin: 50px 20px 50px 20px;
+  }
+
+  /* Main Left */
+
+  .main__left {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main__left > h2 {
+    font-family: 'Lora', serif;
+    font-weight: 100;
+    padding: 20px 0;
+  }
+  .main__left > p {
+    padding: 12px;
+    font-size: 16px;
+    text-align: start;
+  }
+  .main__left > a {
+    text-decoration: none;
+    color: #fff;
+    padding: 12px;
+    font-weight: 700;
+  }
+
+  .main__left span{
+    display: flex;
+    align-items: center;
+  }
+
+
+  /* Main Right */
+  .main__right {
+    position: relative;
+    height: auto;
+  }
+
+  .main__right_img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .creator {
+    padding: 10px 10px;
+    position: absolute;
+    width: auto;
+    height: auto;
+    margin: 0 15px;
+    bottom: -80px;
+    right: 80px;
+    background-color: #181719;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px 0px rgb(0, 0, 0, 0.25);
+  }
+
+  .creator__about {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+    padding: 20px 10px;
+  }
+  .creator__img {
+    width: 40px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .creator__infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-left: 15px;
+  }
+  .creator__name {
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1;
+  }
+  .creator__status {
+    padding: 0;
+  }
+
+  footer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #a9a9a9;
+    margin-top: 200px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  a {
+    color: #a9a9a9;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 960px) {
+    .header__logo {
+      margin-bottom: 30px;
+      white-space: nowrap;
+    }
+    .header__nav__list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      top: 50px;
+      left: -110%;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+  
+    .header__nav__list.active {
+      background: #181719;
+      left: 0;
+      opacity: 1;
+      transition: all 0.6s ease;
+      z-index: 1;
+    }
+  
+    .header__link {
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+    }
+  
+    .menu__icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+  
+    .fa-fas {
+      color: #fff;
+      font-size: 2rem;
+    }
+    .main {
+      display: flex;
+      flex-direction: column;
+    }
+    .main__left {
+      margin-bottom: 20px;
+    }
+    .main__right {
+      margin-bottom: 20px;
+    }
+  }
